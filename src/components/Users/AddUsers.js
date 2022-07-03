@@ -1,12 +1,9 @@
 import Card from "../UI/Card";
 
 const AddUser = (props) => {
-    
     const addUserHandler = (event) => {
         event.preventDefault();
-        
     }
-    
     
     return (
         <Card>
