@@ -2,7 +2,7 @@ import Button from "../UI/Button";
 import Card from "../UI/Card";
 import classes from "./AddUsers.module.css";
 import { useState } from "react";
-import UsersList from "./UsersList";
+//import UsersList from "./UsersList";
 
 const AddUser = (props) => {
   const [userName, setUserName] = useState("");
@@ -17,7 +17,7 @@ const AddUser = (props) => {
     if (+age < 1) {
       return;
     }
-    console.log(userName, age);
+    props.onAddUser(userName, age);
     setUserName("");
     setAge("");
   };
