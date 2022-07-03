@@ -4,6 +4,8 @@ import classes from "./ErrorModal.module.css"
 
 const ErrorModal = (props) => {
     return (
+        <div>
+        <div className={classes.backdrop}/>
         <Card className={classes.modal}>
             <header className={classes.header}>
                 <h2>{props.title}</h2>
@@ -15,6 +17,7 @@ const ErrorModal = (props) => {
                 <Button>Okay</Button>
             </footer>
         </Card>
+        </div>
     )
 };
 
